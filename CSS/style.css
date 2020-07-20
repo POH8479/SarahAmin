@@ -1,0 +1,70 @@
+/********************************TAG SELECTORS********************************/
+
+h1 {
+
+}
+
+/********************************CLASS SELECTORS********************************/
+
+.nav-heading {
+  padding: 16px;
+  font-size: 18;
+  color: orange;
+  margin: 12px;
+}
+
+.nav-headings {
+  position: relative;
+  top:116px;
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+.nav-title {
+  position: relative;
+  top:75.44px;
+  float: left;
+  text-align: center;
+  color: blue;
+  width: 50%;
+}
+
+.nav-bar {
+  height: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  border-bottom-color: orange;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.left-container {
+  top: 150px;
+  position: relative;
+  float: left;
+  width: 37%;
+  margin: 5%;
+}
+
+.right-container {
+  top: 150px;
+  position: relative;
+  float: left;
+  text-align: left;
+  width: 37%;
+  margin: 5%;
+  border-left-color: orange;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding: 2%;
+}
+
+/********************************ID SELECTORS********************************/
+
+#id {
+
+}
