@@ -1,70 +1,187 @@
-/********************************TAG SELECTORS********************************/
-
-h1 {
-
+/********************************TAG SELECTORS*******************************/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(33,35,34);
+  color: rgb(243,233,226);
+  font-family: angie-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/********************************CLASS SELECTORS********************************/
-
-.nav-heading {
-  padding: 16px;
-  font-size: 18;
-  color: orange;
-  margin: 12px;
-}
-
-.nav-headings {
-  position: relative;
-  top:116px;
-  float: left;
-  text-align: center;
-  width: 50%;
-}
-
-.nav-title {
-  position: relative;
-  top:75.44px;
-  float: left;
-  text-align: center;
-  color: blue;
-  width: 50%;
-}
-
-.nav-bar {
-  height: 150px;
-  position: fixed;
+header {
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  padding: 98px 15% 0 15%;
   background: black;
-  border-bottom-color: orange;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom-color: rgb(213,162,134);
   border-bottom-style: solid;
   border-bottom-width: 2px;
 }
 
-.left-container {
-  top: 150px;
+header nav {
+  float: right;
+  font-family: angie-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
   position: relative;
+  width: 108px;
+  text-align: center;
+}
+
+header nav ul li.active {
+  background: rgb(205,210,186);
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: rgb(205,210,186);
+  display: none;
+}
+
+header nav ul li.active ul {
+  display: table-column;
+}
+
+header nav ul li ul li {
+  display: table-row;
+  vertical-align: middle;
+  width: 108px;
+  height: 36px;
+  text-align: center;
+}
+
+header nav ul li ul li a {
+  color: black;
+  font-size: 12px;
+}
+
+header nav ul li ul li a:hover {
+  color: rgb(158,120,137);
+}
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: rgb(207,123,105);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav ul li a:hover {
+  color: rgb(158,120,137);
+  display: block;
+}
+/********************************CLASS SELECTORS*****************************/
+header .logo {
+  color: rgb(159,174,229);
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
   float: left;
-  width: 37%;
-  margin: 5%;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  color: rgb(207,123,105);
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+.left-container {
+  margin-top: 200px;
+  padding: 0;
+  display: flex;
+  float: left;
+  width: 50%;
+}
+
+.left-container img {
+  margin-left: auto;
+  margin-right: 20px;
+  max-width: 80%;
+  height: auto;
+  display: block;
 }
 
 .right-container {
-  top: 150px;
-  position: relative;
-  float: left;
-  text-align: left;
-  width: 37%;
-  margin: 5%;
-  border-left-color: orange;
-  border-left-style: solid;
-  border-left-width: 1px;
-  padding: 2%;
+  margin-top: 250px;
+  padding-top: 100px;
+  padding: 0;
+  float: right;
+  width: 50%;
 }
 
+.about-paragraphs {
+  border-left: 1.5px solid rgb(159,174,229);
+}
+
+.about-paragraphs p {
+  padding: 0px 50px 0 20px;
+}
+
+.about-heading {
+  padding-left: 21.5px;
+  color: rgb(213,162,134);
+}
 /********************************ID SELECTORS********************************/
+#first-paragraph {
+  padding-top: 20px;
+}
 
-#id {
+#last-paragraph {
+  padding-bottom: 20px;
+}
+/********************************MEDIA QUERIES********************************/
+@media (max-width: 890px) {
+  header {
+    padding: 100px 20px 0 15%;
+  }
 
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    background: rgb(33,35,34);
+    height: calc(100vh - 152px);
+    top: 152px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li.active ul {
+    position: relative;
+    background: rgb(33,35,34);
+  }
 }
