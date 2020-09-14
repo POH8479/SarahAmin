@@ -125,14 +125,28 @@ header .logo {
 
 .right-container {
   margin-top: 250px;
-  padding-top: 100px;
   padding: 0;
   float: right;
   width: 50%;
 }
 
+.center-container {
+  margin-top: calc(35vh + 152px);
+  padding: 0 15%;
+}
+
+.center-container h3 {
+  margin-left: 21px;
+  color: rgb(213,162,134);
+}
+
+.center-container p {
+  margin-left: 21px;
+  font-size: 12px;
+}
+
 .about-paragraphs {
-  border-left: 1.5px solid rgb(159,174,229);
+  border-left: 1px solid rgb(159,174,229);
 }
 
 .about-paragraphs p {
@@ -140,8 +154,31 @@ header .logo {
 }
 
 .about-heading {
-  padding-left: 21.5px;
+  padding-left: 21px;
   color: rgb(213,162,134);
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper .card {
+  flex: 0 0 auto;
+  border-left: 1px solid rgb(159,174,229);
+  padding: 10px 150px 10px 20px;
+  font-size: 13px
+  color: rgb(243,233,226);
+}
+
+.scrolling-wrapper .card h4 {
+  font-size: 16px;
+  color: rgb(207,123,105);
+}
+
+.scrolling-wrapper .card p {
+  margin-left: 0;
 }
 /********************************ID SELECTORS********************************/
 #first-paragraph {
