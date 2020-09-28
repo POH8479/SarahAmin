@@ -10,11 +10,24 @@ body {
   font-style: normal;
 }
 
+h3 {
+  font-weight: normal;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  padding: 98px 15% 0 15%;
+  padding: 98px 10% 0 20%;
   background: black;
   width: 100%;
   box-sizing: border-box;
@@ -93,9 +106,8 @@ header .logo {
   color: rgb(159,174,229);
   height: 50px;
   line-height: 50px;
-  font-size: 24px;
+  font-size: 36px;
   float: left;
-  font-weight: bold;
 }
 
 .menu-toggle {
@@ -138,6 +150,7 @@ header .logo {
 .center-container h3 {
   margin-left: 21px;
   color: rgb(213,162,134);
+  font-weight: normal;
 }
 
 .center-container p {
@@ -147,6 +160,7 @@ header .logo {
 
 .about-paragraphs {
   border-left: 1px solid rgb(159,174,229);
+  padding-right: 10%;
 }
 
 .about-paragraphs p {
@@ -156,6 +170,7 @@ header .logo {
 .about-heading {
   padding-left: 21px;
   color: rgb(213,162,134);
+  font-weight: normal;
 }
 
 .scrolling-wrapper {
@@ -179,6 +194,56 @@ header .logo {
 
 .scrolling-wrapper .card p {
   margin-left: 0;
+}
+
+.projects-container {
+  margin-top: 152px;
+  padding: 10px 10%;
+}
+
+.project-category {
+  margin-top: 66px;
+}
+
+.individual-project {
+  display: flex;
+  margin-top: 66px;
+}
+
+.project-images {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 75%;
+}
+
+.project-images img {
+  flex: 0 0 auto;
+  max-height: 60vh;
+  margin-right: 25px;
+}
+
+.project-description {
+  align-self: flex-end;
+  margin-left: 25px;
+  border-left: 1px solid rgb(159,174,229);
+  padding: 25px 0 25px 25px;
+  width: 25%
+}
+
+.project-description h4 {
+  margin: 0;
+  font-size: 16px;
+  color: rgb(207,123,105);
+  font-weight: normal;
+  font-style: italic;
+}
+.project-description p {
+  margin: 0;
+  font-size: 13px;
+  color: rgb(243,233,226);
+  font-weight: normal;
+  font-style: normal;
 }
 /********************************ID SELECTORS********************************/
 #first-paragraph {
@@ -220,5 +285,18 @@ header .logo {
   header nav ul li.active ul {
     position: relative;
     background: rgb(33,35,34);
+  }
+
+  .individual-project {
+    flex-direction: column;
+  }
+
+  .project-description {
+    align-self: flex-start;
+    margin: 5px 0;
+  }
+
+  .project-images {
+    width: 100%;
   }
 }
