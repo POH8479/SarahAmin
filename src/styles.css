@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33,35,34);
+  color: rgb(243,233,226);
+  font-family: angie-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 12px;
+  font-weight: normal;
+}

@@ -1,0 +1,38 @@
+.center-container {
+  margin-top: calc(35vh + 150px);
+  padding: 0 15%;
+}
+
+.center-container h3 {
+  margin-left: 21px;
+  color: rgb(213,162,134);
+  font-weight: normal;
+}
+
+.center-container p {
+  margin-left: 21px;
+  font-size: 12px;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.scrolling-wrapper .card {
+  flex: 0 0 auto;
+  border-left: 1px solid rgb(159,174,229);
+  padding: 10px 150px 10px 20px;
+  font-size: 13px;
+  color: rgb(243,233,226);
+}
+
+.scrolling-wrapper .card h4 {
+  font-size: 16px;
+  color: rgb(207,123,105);
+}
+
+.scrolling-wrapper .card p {
+  margin-left: 0;
+}
