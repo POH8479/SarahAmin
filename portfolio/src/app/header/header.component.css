@@ -1,0 +1,166 @@
+/********************************TAG SELECTORS*******************************/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33,35,34);
+  color: rgb(243,233,226);
+  font-family: angie-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-weight: normal;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 98px 10% 0 20%;
+  background: black;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom-color: rgb(213,162,134);
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.toolbar nav {
+  float: right;
+  font-family: angie-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.toolbar nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.toolbar nav ul li {
+  list-style: none;
+  position: relative;
+  width: 108px;
+  text-align: center;
+}
+
+.toolbar nav ul li.active {
+  background: rgb(205,210,186);
+}
+
+.toolbar nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: rgb(205,210,186);
+  display: none;
+}
+
+.toolbar nav ul li.active ul {
+  display: table-column;
+}
+
+.toolbar nav ul li ul li {
+  display: table-row;
+  vertical-align: middle;
+  width: 108px;
+  height: 36px;
+  text-align: center;
+}
+
+.toolbar nav ul li ul li a {
+  color: black;
+  font-size: 12px;
+}
+
+.toolbar nav ul li ul li a:hover {
+  color: rgb(158,120,137);
+}
+
+.toolbar nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: rgb(207,123,105);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.toolbar nav ul li a:hover {
+  color: rgb(158,120,137);
+  display: block;
+}
+
+.toolbar .logo {
+  color: rgb(159,174,229);
+  height: 50px;
+  line-height: 50px;
+  font-size: 36px;
+  float: left;
+}
+
+.menu-toggle {
+  color: rgb(207,123,105);
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/********************************ID SELECTORS********************************/
+
+/********************************MEDIA QUERIES********************************/
+@media (max-width: 890px) {
+  .toolbar {
+    padding: 100px 20px 0 15%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .toolbar nav {
+    position: absolute;
+    width: 100%;
+    background: rgb(33, 35, 34);
+    height: calc(100vh - 152px);
+    top: 152px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  .toolbar nav.active {
+    left: 0;
+  }
+
+  .toolbar nav ul {
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+
+  .toolbar nav ul li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+  }
+
+  .toolbar nav ul li.active ul {
+    position: relative;
+    display: table-column;
+    background: rgb(33, 35, 34);
+  }
+}
